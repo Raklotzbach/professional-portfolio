@@ -1,76 +1,158 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
-}
-
-body {
-    background-color: rgb(231, 226, 221);
-}
+    max-width: 1000px;
+} *
 
 header {
-    padding: 20px;
-    background-color: rgb(12, 42, 84);
+    display: flex;
+    align-items: center;
+    background-color: rgb(29, 29, 82);
     color: white;
+    height: 100px;
+    flex-wrap: wrap;
 }
 
-header h1 {
-    display: inline-block;
-    font-size: 40px;
+h1 {
+    font-size: 250%;
+    padding-left: 15px;
+    font-family: ui-serif;
 }
 
-img {
-    height: 75px;
-}
-
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font size: 20px;
-}
-
-header nav ul {
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
     list-style-type: none;
+    margin-left: 250px;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-    text-decoration: underline 3px;
-}
-
-#absolute-box {
-    position: absolute;
-    top: 6px;
+#profilephoto {
+    display: flex;
+    height: 75px;
     margin-left: 10px;
     border-radius: 30%;
 }
 
-.image {
-    position: relative;
+article {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #imagebox {
-    height: 200px;
+    height: 150px;
     width: 100%;
-    margin-bottom: 25px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/06/02/02/35/mesh-1430107_960_720.png");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
 }
 
-h2 {
-    position: absolute;
-    top: 130px;
-    left: 60%;
+aside {
+    width: 20%;
+    text-align: end;
+    padding: 20px;
+    margin: 3px;
+    border-right-style: solid;
+    flex-wrap: wrap;
 }
 
-.content_box {
-    height: 200px;
-    width: auto;
-    padding: 10px;
-    background-color: darkblue;
+aside h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(29, 29, 82);
+}
+
+section p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(29, 29, 82);
+}
+
+section {
+    width: 75%;
+    padding: 20px;
+    margin: 3px;
+    margin-right: 10px;
+
+}
+
+.binary {
+    height: 300px;
+    width: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2022/06/11/01/28/binary-code-7255440_960_720.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(5px 5px 4px black);
+    border: 3px solid rgb(34, 102, 141);
+    display: flex;
+}
+
+.project1 {
+    height: 150px;
+    width: 49%;
+    background-color: aquamarine;
+    margin-top: 20px;
+    filter: drop-shadow(5px 5px 4px black);
+    margin-right: 5px;
+}
+
+.project2 {
+    height: 150px;
+    width: 49%;
+    background-color: blueviolet;
+    margin-top: 20px;
+    filter: drop-shadow(5px 5px 4px black);
+    margin-left: 5px;
+}
+
+.align {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(29, 29, 82);
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(29, 29, 82);
     color: white;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    font-size: 14px;
 }
+
+h1::after {
+    font-family: 'ui-serif';
+    content: "Klotzbach";
+    color: grey;
+    margin-left: 7px;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    nav ul {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section ul {
+        display: block;
+        list-style-type: square;
+    }
+
+    .project1, .project2 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+

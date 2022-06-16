@@ -90,7 +90,7 @@ section {
     width: 100%;
     background-image: url("https://cdn.pixabay.com/photo/2022/06/11/01/28/binary-code-7255440_960_720.jpg");
     background-size: cover;
-    background-position: center; */
+    background-position: center;
     filter: drop-shadow(5px 5px 4px black);
     border: 3px solid rgb(34, 102, 141);
 }

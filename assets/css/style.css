@@ -30,7 +30,7 @@ nav ul {
 a {
     color: white;
 }
-
+/* This will cause NAV link text in header to appear larger when hovering over */
 .legend:hover {
     font-size: 125%;
 }
@@ -90,7 +90,7 @@ section {
     width: 100%;
     background-image: url("https://cdn.pixabay.com/photo/2022/06/11/01/28/binary-code-7255440_960_720.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     filter: drop-shadow(5px 5px 4px black);
     border: 3px solid rgb(34, 102, 141);
 }
@@ -119,6 +119,30 @@ section {
     margin-left: 5px;
 }
 
+.project4 {
+    position: relative;
+    height: 150px;
+    width: 49%;
+    background-image: url("https://cdn.pixabay.com/photo/2015/05/31/10/55/man-791049_960_720.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    filter: drop-shadow(5px 5px 4px black);
+    margin-right: 5px;
+}
+
+.project5 {
+    position: relative;
+    height: 150px;
+    width: 49%;
+    background-image: url("https://cdn.pixabay.com/photo/2015/05/26/23/52/technology-785742_960_720.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    filter: drop-shadow(5px 5px 4px black);
+    margin-left: 5px;
+}
+/* This will align in a row and wrap to next line */
 .align {
     display: flex;
     flex-wrap: wrap;
@@ -137,7 +161,7 @@ section ul {
 section ul a {
     color: rgb(29, 29, 82);
 }
-
+/* Increase font size when hovering over list items */
 section ul a:hover {
     font-size: 125%;
 }
@@ -151,11 +175,11 @@ footer {
     margin-top: auto;
     font-size: 14px;
 }
-
+/* This will remove the hyperlink line under the footer text */
 footer a:link {
     text-decoration: none;
 }
-
+/* Creates Psuedo Element for last name */
 h1::after {
     font-family: 'ui-serif';
     content: "Klotzbach";
@@ -236,7 +260,11 @@ h4 a:link {
         list-style-type: square;
     }
 
-    .project2, .project3 {
+    article h2 {
+        font-size: 18px;
+    }
+
+    .project2, .project3, .project4, .project5 {
         width: 100%;
         height: 300px;
         margin-left: 0;
